@@ -1,0 +1,7 @@
+streamlit
+groq
+llama-index
+gitpython
+pygithub
+openai  # (Still needed for llama-index compatibility)
+astor
