@@ -1,8 +1,8 @@
 import os
 import streamlit as st
-from llama_index.agent.openai import OpenAIAgent
+from llama_index.agent.openai.base import OpenAIAgent
 from llama_index.tools.code_interpreter.base import CodeInterpreterToolSpec
-from groq import Groq  # Import Groq client
+from groq import Groq  
 
 def groq_chat_completion(prompt: str, api_key: str, model: str = "mixtral-8x7b-32768") -> str:
     """Call Groq API"""
@@ -17,7 +17,7 @@ def groq_chat_completion(prompt: str, api_key: str, model: str = "mixtral-8x7b-3
     return response.choices[0].message.content.strip()
 
 def return_agent():
-    """Creates an AI agent using the Groq API instead of OpenAI."""
+    """AI agent using the Groq API """
     key = st.secrets["GROQ_API_KEY"]  # Ensure this key is set in Streamlit secrets
 
     code_spec = CodeInterpreterToolSpec()
