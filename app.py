@@ -1,3 +1,5 @@
+import subprocess
+import sys
 import streamlit as st
 import os
 import ast
@@ -212,8 +214,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-import subprocess
-import sys
 
 def install_groq():
     """Checks if the 'groq' module is installed; if not, installs it."""
@@ -225,5 +225,5 @@ def install_groq():
         print("Installation complete. Restarting...")
         import groq  # Try importing again after installation
 
-# Call the function before using groq
+
 
