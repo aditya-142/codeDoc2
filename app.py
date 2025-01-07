@@ -11,7 +11,7 @@ from urllib.parse import urlparse
 from typing import List, Optional, Tuple
 from dataclasses import dataclass
 # install_groq()
-from groq import GroqClient
+from groq import Groq
 from prompts import GRADING_PROMPT
 from agent import return_agent
 
