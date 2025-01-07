@@ -5,3 +5,5 @@ gitpython
 pygithub
 openai  # (Still needed for llama-index compatibility)
 astor
+llama-index-llms-llama-cpp 
+llama-index-embeddings-huggingface
