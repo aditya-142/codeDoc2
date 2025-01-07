@@ -10,7 +10,7 @@ from git import Repo
 from urllib.parse import urlparse
 from typing import List, Optional, Tuple
 from dataclasses import dataclass
-install_groq()
+# install_groq()
 from groq import GroqClient
 from prompts import GRADING_PROMPT
 from agent import return_agent
@@ -215,7 +215,7 @@ def main():
 if __name__ == "__main__":
     main()
 
-def install_groq():
+"""def install_groq():
     """Checks if the 'groq' module is installed; if not, installs it."""
     try:
         import groq  # Try importing groq
@@ -223,7 +223,8 @@ def install_groq():
         print("Module 'groq' not found. Installing now...")
         subprocess.check_call([sys.executable, "-m", "pip", "install", "groq"])
         print("Installation complete. Restarting...")
-        import groq  # Try importing again after installation
+        import groq  # Try importing again after installation """
+
 
 
 
